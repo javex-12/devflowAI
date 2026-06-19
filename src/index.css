@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@405;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Outfit", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", SFMono-Regular, Consolas, monospace;
+}
+
+@layer base {
+  body {
+    background-color: #030712;
+    color: #cbd5e1;
+  }
+}
+
+.glass {
+  background: rgba(30, 41, 59, 0.45);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #5eead4, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glow-dot {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.16) 0%, transparent 70%);
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Custom premium scrollbar styling matching YC dark theme criteria */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1b1b1b;
+  border-radius: 999px;
+  border: 1px solid #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #282828;
+}
+
+/* Scroll wrapper layout styles */
+.custom-textarea-scroll::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.custom-textarea-scroll::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 4px;
+}
+
+.custom-textarea-scroll::-webkit-scrollbar-thumb:hover {
+  background: #3a3a3a;
+}
+
+/* Custom grid or theme variables details */
+.bg-neutral-905 {
+  background-color: #0a0a0a;
+}
+.bg-neutral-907 {
+  background-color: #0d0d0d;
+}
+.border-neutral-805 {
+  border-color: #1a1a1a;
+}
+.border-neutral-850 {
+  border-color: #202020;
+}
+.text-neutral-450 {
+  color: #a3a3a3;
+}
+.text-neutral-550 {
+  color: #737373;
+}
+.text-neutral-605 {
+  color: #525252;
+}
+
+.animate-gradient-flow {
+  background-size: 200% auto;
+  animation: shine 6s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* Scroll smooth settings */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}

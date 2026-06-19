@@ -1,0 +1,6 @@
+{
+  "name": "DevFlow AI",
+  "description": "An AI-powered developer productivity platform to automate workflows, optimize code, and accelerate software delivery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
